@@ -1,0 +1,14 @@
+<!-- Starts up everything needed to run the example listener/talker nodes. -->
+<launch>
+
+  <!-- The Python talker node will publish a custom message. -->
+  <node pkg="performane_tests" type="pytalker.py" name="pytalker">
+    <param name="rate" value="1"/>
+  </node>
+  
+  <!-- The C++ listener node subscribes to the custom message that either talker is publishing. -->
+  <node pkg="performane_tests" type="listener" name="listener">
+  </node>
+  
+  <include file="$(find node_example)/launch/tools.launch"/>
+</launch>

@@ -1,0 +1,20 @@
+<package format="2">
+  <name>performance_tests</name>
+  <version>0.0.1</version>
+  <description>
+    Publishers and subscribers that use the parameter server, dynamic
+    reconfigure, timers, and custom messages along with various combinations likes Cpp Talker and Py listner, Py listner and Cpp Talker etc..
+  </description>
+  <author>Saptarshi Mukherjee</author>
+  <maintainer email="saptarshim11@gmail.com">Saptarshi Mukherjee</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <depend>dynamic_reconfigure</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+</package>
